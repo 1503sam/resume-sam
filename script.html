@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+  <title>JAVAscript learning</title>
+  
+</head>
+<body>
+  <style>
+   #div1{
+     border: 2px solid red;
+     padding: 10px;
+     width: 170px;
+   }
+   #div2{
+     border: 2px dashed rebeccapurple;
+     padding: 10px;
+   }
+   img{
+     height: 150px;
+     width: 150px;
+     border: 1.5px solid blue;
+   }
+  </style>
+  <h1>Jquery ui Auto complete widget</h1>
+  <div id="div1">
+    <h2>Enter your city</h2>
+    <label id="l1">Search your city here: </label>
+    <input type="text" id="in">
+    <!--<button id="bt1"> Button 1</button>-->  
+  </div>
+  
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+  <script>
+   
+    
+      var city=["Mumbai","Thane","Airoli","New delhi","New York","Chennai","Kolkata"];
+      $("#in").autocomplete({
+        source: city
+      },{
+        autoFocus:true,
+        minlength:2
+      });
+
+  
+    
+    
+  </script>
+</body>
+</html>
